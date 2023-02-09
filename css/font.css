@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'SansaProBold';
+    src: url('../fonts/sansapro-bold.eot');
+    src: url('../fonts/sansapro-bold.eot') format('embedded-opentype'),
+         url('../fonts/sansapro-bold.woff') format('woff'),
+         url('../fonts/sansapro-bold.ttf') format('truetype'),
+         url('../fonts/sansapro-bold.svg#SansaProBold') format('svg');
+}
+@font-face {
+    font-family: 'SansaProLight';
+    src: url('../fonts/sansapro-light.eot');
+    src: url('../fonts/sansapro-light.eot') format('embedded-opentype'),
+         url('../fonts/sansapro-light.woff') format('woff'),
+         url('../fonts/sansapro-light.ttf') format('truetype'),
+         url('../fonts/sansapro-light.svg#SansaProLight') format('svg');
+}
+@font-face {
+    font-family: 'SansaProLightItalic';
+    src: url('../fonts/sansapro-lightitalic.eot');
+    src: url('../fonts/sansapro-lightitalic.eot') format('embedded-opentype'),
+         url('../fonts/sansapro-lightitalic.woff') format('woff'),
+         url('../fonts/sansapro-lightitalic.ttf') format('truetype'),
+         url('../fonts/sansapro-lightitalic.svg#SansaProLightItalic') format('svg');
+}
+@font-face {
+    font-family: 'SansaProNormal';
+    src: url('../fonts/sansapro-normal.eot');
+    src: url('../fonts/sansapro-normal.eot') format('embedded-opentype'),
+         url('../fonts/sansapro-normal.woff') format('woff'),
+         url('../fonts/sansapro-normal.ttf') format('truetype'),
+         url('../fonts/sansapro-normal.svg#SansaProNormal') format('svg');
+}
+
+@font-face {
+    font-family: 'sansa_problack';
+    src: url('../fonts/sansapro-black.eot');
+    src: url('../fonts/sansapro-black.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sansapro-black.woff') format('woff'),
+         url('../fonts/sansapro-black.ttf') format('truetype'),
+         url('../fonts/sansapro-black.svg#sansa_problack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -1,0 +1,971 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+/************Start Comman Classes********/
+body {
+	background-color: #c6cbcc;
+	padding: 0 50px;
+}
+a {
+	text-decoration: none;
+}
+ul li {
+	list-style-type: none;
+}
+img {
+	border: none;
+}
+.clear {
+	clear: both;
+}
+input[type="text"], input[type="password"], input[type="email"], input[type="tel"] {
+	border: none;
+	font-family: 'SansaProLight';
+	color: #606060;
+	font-size: 25px;
+}
+input[type="submit"], input[type="button"] {
+	border: none;
+	background: #158bca;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+	font-family: 'SansaProBold';
+	font-size: 20px;
+	margin-top: 8px;
+	padding: 10px 0;
+	width: 100%;
+}
+input[type="reset"] {
+}
+textarea {
+	border: none;
+	font-family: 'SansaProLight';
+	color: #606060;
+	font-size: 25px;
+	resize: none;
+}
+.mt {
+	margin-top: 17px;
+}
+/************End Comman Classes********/
+
+.outer {
+	background-color: #b6bbbc;
+	padding: 0 20px;
+	min-width: 1100px;
+}
+.inner {
+	background-color: #fafafa;
+	background-image: url(../images/body-bg.png);
+	background-repeat: no-repeat;
+	background-position: center -14px;
+}
+header {
+	margin: 0 0 30px 0;
+	overflow: hidden;
+}
+.right-col {
+	float: right;
+	width: 70%;
+	margin-top: 10px;
+}
+.right-top {
+}
+.co-logo {
+	float: left;
+}
+.right-nav {
+	float: right;
+	margin-right: 23px;
+}
+.right-nav ul {
+}
+.right-nav ul li {
+	float: left;
+}
+.right-nav ul li a {
+	color: #535353;
+	font-size: 16px;
+	padding: 12px 0;
+	margin: 0px 15px;
+	font-family: 'SansaProNormal';
+	display: block;
+}
+.right-nav ul li a:hover, .right-nav ul li a.selected {
+	border-bottom: 1px solid #a3a3a3;
+	color: #535353;
+}
+.right-nav ul li a.deactive {
+	border: 1px solid #afafaf;
+	border-radius: 5px;
+	padding: 12px 30px;
+	background-color: #c3c3c3;
+	color: #fff;
+}
+.search-part {
+	width: 832px;
+	margin: 32px auto 26px;
+}
+.search-part input[type="text"] {
+	background: none;
+	background-image: url(../images/search-bg.png);
+	background-repeat: no-repeat;
+	width: 85%;
+	height: 60px;
+	padding: 5px 23px;
+	border: none;
+	font-size: 25px;
+	color: #595959;
+	font-family: 'SansaProLight';
+	float: left;
+}
+.search-part input[type="button"] {
+	background: url(../images/search-btn.png) no-repeat;
+	width: 72px;
+	height: 70px;
+	cursor: pointer;
+	border: none;
+	float: left;
+	margin: 0;
+}
+.cat {
+	background: url(../images/cat-bg.jpg) repeat; /*max-width:1250px;*/
+	width: 100%;
+}
+.cat .col {
+	float: left;
+	width: 20%;
+	text-align: center;
+	padding: 35px 2%;
+	border-left: 1px solid #000;
+	margin: 5px 0;
+}
+.cat .col:first-child {
+	border: none;
+}
+.cat .col h2 {
+	font-family: 'SansaProBold';
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.cat .col h3 {
+	margin: 8px 0;
+	color: #222221;
+	font-family: 'SansaProLightItalic';
+	font-size: 30px;/*background:url(../images/border.png) repeat-x center 50%;*/
+	position: relative;
+}
+.cat .col h3 span {
+	background: url(../images/border.png) no-repeat;
+	display: inline-block;
+	width: 22px;
+	height: 3px;
+	position: relative;
+	top: -6px;
+}
+/*.cat .col h3 span.last{ background:url(../images/border.png) no-repeat; display:inline-block; width:22px; height:3px; }*/
+.cat .col h3 strong {
+	display: inline-block;
+	padding: 0 10px;
+}
+.cat .col p {
+	font-family: 'SansaProNormal';
+	font-size: 15px;
+	color: #fff;
+}
+.quote {
+	background: url(../images/quote-bg.png) repeat;
+	height: 32px;
+	padding: 20px 60px;
+}
+.quote h1 {
+	color: #fff;
+	font-family: 'SansaProLight';
+	font-size: 25px;
+	font-weight: normal;
+}
+.form-sec {
+	background: url(../images/frm-bg.jpg) repeat;
+}
+.form-sec .reg-part {
+	float: left;
+	padding: 45px 3%;
+	text-align: center;
+	width: 43%;
+}
+.form-sec .reg-part h2 {
+	font-family: 'SansaProBold';
+	font-size: 50px;
+	color: #fff;
+	line-height: 40px;
+	margin-bottom: 25px;
+}
+.form-sec .reg-part p {
+	color: #fff;
+	font-family: 'SansaProLight';
+	font-size: 25px;
+	line-height: 30px;
+	margin-bottom: 40px;
+}
+.form-sec .reg-part .frm {
+	margin-bottom: 8px;
+}
+.form-sec .log-part {
+	float: right;
+	background: url(../images/login-bg.jpg) repeat-y;
+	background-size: 100%;
+	min-height: 465px;
+	padding: 200px 2%;
+	text-align: center;
+	width: 46%;
+}
+.form-sec .log-part h2 {
+	font-family: 'SansaProBold';
+	font-size: 50px;
+	color: #fff;
+	line-height: 40px;
+	margin-bottom: 25px;
+}
+.form-sec .log-part p {
+	color: #fff;
+	font-family: 'SansaProLight';
+	font-size: 25px;
+	line-height: 30px;
+	margin-bottom: 40px;
+}
+.form-sec .log-part .frm {
+	margin-bottom: 8px;
+}
+.log-part input[type="text"], .log-part input[type="password"] {
+	padding: 20px 10px !important;
+}
+.ft-bg {
+	position: relative;
+	top: -14px;
+	height: 35px;
+	width: 100%;
+	overflow: hidden;
+}
+.ft-bg img {
+	width: 1209px;
+}
+.ft-wrap { /*background:url(../images/footer-bg.png) no-repeat center top; position:relative; top:-18px;*/
+	background-color: #fff;
+	clear: both;
+}
+.ft-wrap .tp-sec {
+	padding: 30px 30px 30px;
+	border-bottom: 1px solid #c2c2c2;
+}
+.ft-wrap .tp-sec .nav-sec {
+	border-right: 1px solid #d3d3d3;
+	padding-right: 25px;
+	width: 28%;
+	float: left;
+}
+.ft-wrap .tp-sec .nav-sec .main-sec {
+	float: left;
+}
+.ft-wrap .tp-sec .nav-sec h2 {
+	font-size: 15.36px;
+	color: #404040;
+	font-family: 'SansaProBold';
+	margin-bottom: 10px;
+	font-weight: normal;
+}
+.ft-wrap .tp-sec .nav-sec ul {
+}
+.ft-wrap .tp-sec .nav-sec ul li {
+	line-height: 23px;
+}
+.ft-wrap .tp-sec .nav-sec ul li a {
+	color: #3b87a6;
+	font-size: 14px;
+	font-family: 'SansaProNormal';
+	text-decoration: underline;
+}
+.ft-wrap .tp-sec .nav-sec ul li a:hover {
+}
+.ft-wrap .tp-sec .nav-sec .basic-cat {
+	float: right;
+}
+.ft-wrap .tp-sec .reach-us {
+	float: right;
+	width: 67%;
+}
+.ft-wrap .tp-sec .reach-us h2 {
+	font-size: 18px;
+	color: #404040;
+	font-family: 'SansaProBold';
+	margin-bottom: 10px;
+}
+.ft-wrap .tp-sec .reach-us input[type="text"], .ft-wrap .tp-sec .reach-us input[type="email"] {
+	width: 90%;
+	height: 38px;
+	background: #f7f7f7;
+	border: 1px solid #cbcbcb;
+	border-radius: 5px;
+	padding: 0 10px;
+	font-size: 16px;
+	color: #797979;
+	font-family: 'SansaProLight';
+	display: block;
+	margin-bottom: 10px;
+}
+.ft-wrap .tp-sec .reach-us textarea {
+	width: 90%;
+	height: 78px;
+	background: #f7f7f7;
+	border: 1px solid #cbcbcb;
+	border-radius: 5px;
+	padding: 5px 10px;
+	font-size: 16px;
+	color: #797979;
+	font-family: 'SansaProLight';
+}
+.ft-wrap .tp-sec .reach-us label {
+	color: #747575;
+	font-size: 14px;
+	font-family: 'SansaProLight';
+	display: block;
+}
+.ft-wrap .tp-sec .reach-us input[type="submit"] {
+	background: #c86464;
+	border: none;
+	font-family: 'SansaProNormal';
+	font-size: 16px;
+	color: #fff;
+	padding: 12px 40px;
+	width: auto;
+	height: auto;
+	border-radius: 5px;
+	margin-top: 14px;
+}
+.ft-wrap .tp-sec .reach-us input[type="checkbox"] {
+	width: 17px;
+	height: 17px;
+	border: 1px solid #acacac;
+	border-radius: 5px;
+	background: #e3e3e3;
+	position: relative;
+	top: 3px;
+	margin-right: 8px;
+}
+.ft-wrap .tp-sec .reach-us .text-sec {
+	float: left;
+	margin-right: 20px;
+	width: 31%;
+}
+.ft-wrap .tp-sec .reach-us .area-sec {
+	float: left;
+	margin-right: 20px;
+	width: 28%;
+}
+.ft-wrap .tp-sec .reach-us .chk-sec {
+	float: right;
+	margin-top: 5px;
+}
+.ft-wrap .bt-sec {
+	padding-bottom: 20px;
+}
+.ft-wrap .bt-sec .copyw {
+	float: left;
+	padding: 24px 0px 30px 30px;
+}
+.ft-wrap .bt-sec .copyw p {
+	font-size: 14px;
+	color: #2a839e;
+	font-family: 'SansaProNormal';
+}
+.ft-wrap .bt-sec .copyw p a {
+	font-size: 14px;
+	color: #2a839e;
+	font-family: 'SansaProNormal';
+}
+.ft-wrap .bt-sec .copyw p strong {
+	color: #1b2433;
+	font-size: 12px;
+	font-family: 'SansaProNormal';
+	font-weight: normal;
+	background: url(../images/dot.png) no-repeat;
+	background-position: left;
+	padding-left: 15px;
+	margin-left: 8px;
+}
+.ft-wrap .bt-sec .social-partner {
+	float: right;
+	margin-top: 10px;
+}
+.ft-wrap .bt-sec .social-partner ul {
+}
+.ft-wrap .bt-sec .social-partner ul li {
+	float: left;
+	font-family: 'SansaProLightItalic';
+	color: #363636;
+	font-size: 16px;
+	border-left: 2px solid #c3c3c3;
+	height: 30px;
+	padding: 10px;
+	line-height: 28px;
+}
+.ft-wrap .bt-sec .social-partner ul li:first-child {
+	border: none;
+}
+.ft-wrap .bt-sec .social-partner ul li .partner {
+	width: 220px;
+}
+.ft-wrap .bt-sec .social-partner ul li span {
+}
+.ft-wrap .bt-sec .social-partner ul li a {
+}
+.frm input[type="text"], .frm input[type="password"], .frm input[type="email"], .frm input[type="tel"] {
+	background: url("../images/textbg.png") repeat;
+	border-radius: 5px;
+	color: #444444;
+	font-family: 'SansaProLight';
+	font-size: 14px;
+	padding: 11px 10px;
+	width: 96%;
+}
+.frm textarea {
+	background: url("../images/textbg.png") repeat;
+	border-radius: 5px;
+	color: #444444;
+	font-family: 'SansaProLight';
+	font-size: 14px;
+	padding: 11px 10px;
+	width: 96%;
+	height: 150px
+}
+.search-part > input {
+	border-radius: 0;
+}
+/*------------ new css 20 June 2014------------*/
+.dashboard_sec {
+	background: #eaeef1 url(../images/das_hbg.png) no-repeat center bottom;
+	padding: 50px 0 290px 0;
+	min-height: 400px;
+}
+.dashboard_con {
+	width: 80%;
+	margin: 0px auto;
+}
+.dashboard_pane {
+	width: 100%;
+	margin: 0px auto;
+	max-width: 1280px;
+}
+.stepSwrap {
+	margin: 0 auto;
+	padding: 55px 0;
+	position: relative;
+	width: 953px;
+}
+.color_1 {
+	color: #ea2228 !important
+}
+.color_2 {
+	color: #3ab5e2 !important
+}
+.color_3 {
+	color: #1a92a5 !important
+}
+.color_4 {
+	color: #788c11 !important
+}
+.stepSwrap img {
+	float: left;
+	margin: 0 5px;
+}
+.stepSwrap h2 {
+	font-family: 'sansa_problack';
+	font-size: 40px;
+	padding: 15px 0 0 0;
+	color: #151515;
+	text-transform: uppercase;
+}
+.stepSwrap h3 {
+	font-family: 'SansaProNormal';
+	font-size: 30px;
+	color: #151515;
+}
+.stepLeft {
+	-webkit-box-shadow: -20px 0px 40px 0px #b3b6b8;
+	box-shadow: -20px 0px 40px 0px #b3b6b8;
+	padding: 10px;
+	border-radius: 80px 0px 0px 80px;
+	float: left;
+	width: 48%;
+}
+.dText {
+	color: #075883;
+	text-align: center;
+	padding: 0 0 50px 0px;
+}
+.dText h2 {
+	font-family: 'sansa_problack';
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.dText p {
+	font-family: 'SansaProLight';
+	font-size: 18px;
+}
+.stepRight {
+	-webkit-box-shadow: 10px 0px 40px 0px #b3b6b8;
+	box-shadow: 10px 0px 40px 0px #b3b6b8;
+	padding: 10px;
+	border-radius: 0px 80px 80px 0px;
+	float: right;
+	width: 48%;
+}
+.stepRight img {
+	float: right;
+	margin-left: 0px;
+}
+.stepRight h2, .stepRight h3 {
+	margin-left: 20px;
+}
+.stepLeft, .stepRight {
+	/*	height:175px;*/ position: relative;
+}
+.dotimg {
+	right: -20px;
+	position: absolute;
+	top: -80px;
+	background: url(../images/dotbg.png) no-repeat top;
+	width: 46px;
+	min-height: 230px;
+	z-index: 25;
+}
+.dotimg_1 {
+	background: url(../images/dotbg.png) no-repeat top;
+	width: 46px;
+	left: -24px;
+	min-height: 178px;
+	position: absolute;
+	top: -27px;
+	width: 46px;
+	z-index: 25;
+}
+.dotimg_2 {
+	background: url(../images/dotbg.png) no-repeat top;
+	width: 46px;
+	right: -20px;
+	min-height: 175px;
+	position: absolute;
+	top: -27px;
+	width: 46px;
+	z-index: 25;
+}
+.dotimg_3 {
+	background: url(../images/dotbg.png) no-repeat top;
+	min-height: 48px;
+	position: absolute;
+	right: -20px;
+	top: 113px;
+	width: 46px;
+	z-index: 25;
+}
+.dotimg_4 {
+	background: url(../images/dotbg_1.png) no-repeat bottom;
+	width: 46px;
+	left: -24px;
+	min-height: 200px;
+	position: absolute;
+	top: -27px;
+	width: 46px;
+	z-index: 25;
+}
+.rLinks {
+	float: right;
+	color: #fff;
+	font-family: 'SansaProLight';
+	font-size: 20px;
+	font-weight: normal;
+}
+.rLinks a {
+	color: #fff;
+}
+.rLinks span {
+	color: #fff;
+	padding: 0 25px;
+}
+.left {
+	float: left
+}
+.right {
+	float: right
+}
+.userInfo {
+	float: right;
+	font-family: 'SansaProLight';
+	width: 170px;
+	font-size: 14px;
+	margin-top: 0px;
+	border: 1px solid #dfdfdf;
+	border-radius: 300px;
+	padding: 5px;
+	background-color: #f1f1f1;
+}
+.userInfo img {
+	vertical-align: sub;
+}
+.upic {
+	float: left;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 128px;
+}
+.upic img {
+	border: 1px solid #a9a9a9;
+	border-radius: 50%;
+	height: 24px;
+	padding: 2px;
+	vertical-align: middle;
+	width: 24px;
+}
+.upic > a {
+	display: inline !important;
+	font-size: 13px !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.lout {
+	float: right;
+	border-left: 1px solid #a9a9a9;
+	margin: 5px 0 0 5px !important;
+	width: 30px;
+	text-align: center;
+}
+.lout > a {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.userInfo a:hover {
+	border-bottom: 0px !important;
+}
+/*----------------------- new css 23 June 2014 ----------------*/
+.Apiwrap {
+	margin: 0 auto;
+	padding: 0px 0 50px;
+	position: relative;
+	width: 953px;
+}
+.apiInPane {
+	width: 50%;
+	margin: 0px auto;
+}
+.apiInputs {
+	color: #3e3e3e;
+	font-family: 'SansaProLight';
+	font-size: 20px;
+	padding: 5px 0;
+	width: 100%;
+}
+.apiInputs input[type="text"] {
+	border: 2px solid #d8d8d8;
+	border-radius: 5px;
+	color: #606060;
+	font-family: 'SansaProLight';
+	font-size: 14px;
+	padding: 10px 0;
+	text-align: center;
+	width: 100%;
+}
+.apiInputs select {
+	border: 2px solid #d8d8d8;
+	border-radius: 5px;
+	color: #606060;
+	font-family: 'SansaProLight';
+	font-size: 14px;
+	padding: 10px 0;
+	text-align: center;
+	width: 101%;
+}
+.apiInputs span {
+	padding-right: 70px;
+	font-family: 'SansaProLight';
+	color: #606060;
+	font-size: 16px;
+}
+.apiInPane input[type="submit"] {
+	border: 2px solid #9eb5c3;
+}
+.mangeApi {
+	margin: 0 auto;
+	padding: 0px 0 50px;
+	position: relative;
+	width: 960px;
+}
+.mangeApi .thHeading {
+	background: #60c1e4;
+	font-family: 'sansa_problack';
+	font-size: 16px;
+	color: #fff;
+	border-top: 2px solid #d5d7d9;
+	border-left: 2px solid #d5d7d9;
+	border-right: 2px solid #d5d7d9;
+	clear: both;
+	line-height: 40px;
+	border-radius: 10px 10px 0 0;
+}
+.mangeApi div.tblRow > div:last-child {
+	border-radius: 0 0 4px 4px;
+}
+.mangeApi .thHeading div, .mangeApi div div.col {
+	display: table-cell;
+	padding: 7px 5px 6px
+}
+.mangeApi .thHeading div {
+	border-right: 1px solid #bebebe;
+}
+.mangeApi .tblRow {
+	background: #f0f0f0;
+	color: #8e8e8e;
+	font-family: 'SansaProNormal';
+	border-right: 2px solid #cacbcc;
+	border-left: 2px solid #cacbcc;
+	border-bottom: 2px solid #cacbcc;
+	border-radius: 0 0 4px 4px;
+}
+.mangeApi div.gry {
+	background: #f0f0f0;
+	color: #8e8e8e;
+	font-family: 'SansaProNormal';
+	font-size: 14px;
+}
+.mangeApi div div.col {
+	border-right: 1px solid #cacbcc;
+	border-bottom: 1px solid #cacbcc;
+	color: #8e8e8e;
+	font-family: 'SansaProNormal';
+}
+.mangeApi div.tblRow > div:last-child div.col {
+	border-bottom: 0px;
+}
+.mangeApi .thHeading div:nth-child(1), .mangeApi div div.col:nth-child(1) {
+	width: 25px;
+	vertical-align: middle;
+	text-align: center;
+}
+.mangeApi .thHeading div:nth-child(2), .mangeApi div div.col:nth-child(2) {
+	width: 150px;
+	vertical-align: middle
+}
+.mangeApi .thHeading div:nth-child(3), .mangeApi div div.col:nth-child(3) {
+	width: 200px;
+	vertical-align: middle
+}
+.mangeApi .thHeading div:nth-child(4), .mangeApi div div.col:nth-child(4) {
+	width: 200px;
+	vertical-align: middle
+}
+.mangeApi .thHeading div:nth-child(5), .mangeApi div div.col:nth-child(5) {
+	width: 140px;
+	vertical-align: middle;
+}
+.mangeApi .thHeading div:nth-child(6), .mangeApi div div.col:nth-child(6) {
+	width: 175px;
+	text-align: center;
+	vertical-align: middle;
+	border-right: 0px;
+}
+.mangeApi .col > img {
+	margin: 0 5px;
+}
+/*************New Update****************/
+.logo-part {
+	float: left;
+	background: url(../images/bg-corner.png) no-repeat;
+	width: 327px;
+	height: 184px;
+	position: relative;
+	margin-bottom: 33px;
+}
+.logo_sec {
+	position: absolute;
+	left: 28%;
+	top: 36%;
+}
+.right-nav ul li a.active {
+	border: 1px solid #afafaf;
+	border-radius: 5px;
+	padding: 12px 20px;
+	background-color: #ababab;
+	color: #fff;
+}
+.search_ssec {
+	text-align: center;
+	padding-bottom: 40px;
+	position: relative;
+}
+.search_ssec h2 {
+	font-family: 'SansaProBold';
+	color: #545454;
+	font-size: 37px;
+	text-transform: uppercase;
+}
+.search_ssec p {
+	font-family: 'SansaProNormal';
+	color: #020202;
+	font-size: 15px;
+}
+.lg {
+	left: 44.5%;
+	position: absolute;
+	top: -70%;
+}
+.self-intro {
+	text-align: center;
+	background: url(../images/intro-bg.png) repeat;
+	padding: 30px 150px;
+	min-height: 535px;
+	background: #016d8e url(../images/introbg.png) repeat-x center;
+	padding: 20px;
+	position: relative;
+}
+.self-intro h2 {
+	font-family: 'SansaProBold';
+	font-size: 42.67px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.self-intro p {
+	font-family: 'SansaProLight';
+	font-size: 21px;
+	color: #fff;
+	padding-bottom: 35px;
+}
+.self-intro .process {
+	background: url(../images/bg-repeat.png) repeat-x;
+	background-position: center 50%;
+	margin: 0 auto;
+	max-width: 940px;
+	min-height: 290px;
+	position: relative;
+	width: 100%;
+}
+.self-intro .process p {
+	text-align: center;
+}
+.self-intro .process p label {
+	display: block;
+}
+.self-intro .process .col1 {
+	float: left;
+	position: absolute;
+	top: 16%;
+	left: -6%;
+}
+.self-intro .process .col2 {
+	float: left;
+	position: absolute;
+	top: 0%;
+	left: 35%;
+}
+.self-intro .process .col3 {
+	float: right;
+	position: absolute;
+	top: 19%;
+	right: -6%;
+}
+.spec {
+	text-align: center;
+	background: #dedede;
+	padding: 40px 20px 0px;
+}
+.spec h2 {
+	font-size: 34.14px;
+	color: #075883;
+	font-family: 'SansaProBold';
+}
+.spec p {
+	font-family: 'SansaProLight';
+	color: #075883;
+	font-size: 21.33px;
+}
+.step_part {
+	clear: both;
+	padding: 25px 0px;
+}
+.step_part ul {
+}
+.step_part ul li {
+	display: inline;
+	margin: 0 .5%;
+}
+.re_coWrap {
+}
+.Retailercon {
+	background: #f2e2c8 url(../images/retailers_bg.jpg) no-repeat bottom right;
+	min-height: 651px;
+	float: left;
+	width: 50%;
+}
+.retailers_logos {
+	clear: both;
+	width: 100%;
+	padding: 120px 0px 50px 0px;
+}
+.retailers_logos h2 {
+	font-family: 'SansaProBold';
+	font-size: 42px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+}
+.retailers_logos ul {
+	padding: 35px 0 0 35px;
+}
+.retailers_logos ul li {
+	float: left;
+	margin: 5px 15px
+}
+.Contactrcon {
+	background: #1e5171 url("../images/contact_bg.jpg") no-repeat left top;
+	min-height: 650px;
+	float: left;
+	width: 50%;
+}
+.ConPane {
+	clear: both;
+	width: 100%;
+	padding: 120px 0px 50px 0px;
+	font-family: 'SansaProBold';
+	color: #fff;
+	font-size: 42px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.ConPane p {
+	font-size: 20px;
+	font-family: 'SansaProLight';
+	text-transform: none;
+	padding: 25px 0;
+}
+.ConPane h3 {
+	padding: 35px 0 0;
+	font-size: 32px;
+	text-transform: none;
+}
+.ConPane h3 a {
+	color: #fff;
+}
+.ConPane h2 {
+	font-family: 'SansaProBold';
+	font-size: 42px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+}
+.ConPane h3 img {
+	padding-bottom: 10px;
+}
